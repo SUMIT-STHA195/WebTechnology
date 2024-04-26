@@ -1,0 +1,1 @@
+attribute defines the properties of tag.
