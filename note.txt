@@ -1,1 +1,4 @@
 attribute defines the properties of tag.
+UTF-Unicode Transformation Format
+meta data is used for search engine optimization
+og-open graph protocol
