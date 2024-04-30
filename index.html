@@ -572,6 +572,17 @@ K
                 </div>
             </fieldset>
         </section>
+        <section>
+            <fieldset>
+               <legend>30 april,2024(Keyboard events, form events,window events)</legend>
+                <div onkeypress="console.log('keypressed')" style="display: flex; flex-direction: column; gap: 10px;">
+                <input placeholder="onchange" onchange="console.log('Change triggered')" type="text">
+                <input placeholder="oninput" oninput="console.log('input trigerred')" type="text">
+                <input onkeypress="console.log('key pressed')" type="text">
+                <input placeholder="key up/down" onkeydown="console.log('key down triggered')" type="text">
+                </div>
+            </fieldset>
+        </section>
     </main>
     <footer>
         Copyright 2024 Sumit Kumar Shrestha
