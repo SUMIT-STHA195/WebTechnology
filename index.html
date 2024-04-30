@@ -580,10 +580,22 @@ K
                 <input placeholder="oninput" oninput="console.log('input trigerred')" type="text">
                 <input onkeypress="console.log('key pressed')" type="text">
                 <input placeholder="key up/down" onkeydown="console.log('key down triggered')" type="text">
+                <!-- Form event -->
+                <form onreset="alert('form is reset')" onsubmit="alert('hello form is submitted')">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
                 </div>
             </fieldset>
         </section>
     </main>
+    <div>
+    <button onclick="window.scrollTo(0,0)">Go to top</button>
+    </div>
     <footer>
         Copyright 2024 Sumit Kumar Shrestha
     </footer>
@@ -593,6 +605,13 @@ K
             e.preventDefault();
             console.log('here');
         })
+        window.addEventListener('scroll',()=>{
+            console.log('hello user scrolled!!!');
+        })
+        window.addEventListener('click',()=>{
+            console.log('hello user clicked!!!');
+        })
+
     </script>
 </body>
 

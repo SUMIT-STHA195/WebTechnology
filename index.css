@@ -1,0 +1,35 @@
+*:not(.rect){
+    /* color: red !important; for all */
+    color: red;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.divA{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+
+}
+#square{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+}
+/* nested selector */
+.wrapper .rect{
+    color: blue;
+}
