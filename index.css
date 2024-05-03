@@ -1,8 +1,22 @@
-*:not(.rect){
-    /* color: red !important; for all */
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
 }
-.wrapper{
+main{
+    display: flex;
+    flex-direction: column-reverse;
+}
+body{
+    margin: 5px;
+}
+fieldset{
+    padding: 5px;
+    margin:15px;
+}
+.color{
+    padding: 15px;
+}
+.wrapper ,.bg-wrapper{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -32,4 +46,79 @@
 /* nested selector */
 .wrapper .rect{
     color: blue;
+}
+/* *:not(.wrapper .rect,#square){
+     color: red !important; for all
+    color:blue in !important;
+} */
+.red{
+    /* color: red; */
+    color: #b71d1c;
+    /* color:#b71d1c10 */
+    /* color: rgb(red, green, blue); */
+    /* color: rgba(red, green, blue, 10); */
+    /* color: hsl(0, 100%, 50%); */
+}
+.color-bg{
+    width: 100px;
+    height: fit-content;
+    color: white;
+}
+.green{
+    background: #008000;
+}
+.blue{
+    background: #008;
+}
+/* Some CSS properties for different */
+.green span,.blue span{
+    font-size: 15px;
+    padding: 5px;
+}
+.bg-image{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background: url("https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024");
+    /*  background-position: x-pos y-pos  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px -65px;
+}
+.borders-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.borders-wrapper div{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.solid{
+    /* Border short-hand property */
+    /* this is shorthand method for below three codes */
+    border: 1px solid red;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+    border-radius: 3px;
+}
+.dashed{
+    /* Border short-hand property */
+    /* this is shorthand method for below three codes */
+    border: 1px dashed blue;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+
+    border-radius: 3px;
+}
+.dotted{
+    /* Border short-hand property */
+    /* this is shorthand method for below three codes */
+    border: 1px dotted blue;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+    border-radius: 3px;
 }
