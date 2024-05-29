@@ -1,27 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column-reverse;
 }
-body{
+
+body {
     margin: 5px;
 }
-fieldset{
+
+fieldset {
     padding: 5px;
-    margin:15px;
+    margin: 15px;
 }
-.color{
+
+.color {
     padding: 15px;
 }
-.wrapper ,.bg-wrapper{
+
+.wrapper,
+.bg-wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.divA{
+
+.divA {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -33,7 +40,8 @@ fieldset{
     color: white;
 
 }
-#square{
+
+#square {
     width: 50px;
     height: 50px;
     border: 1px solid green;
@@ -43,15 +51,17 @@ fieldset{
     background-color: brown;
     color: white;
 }
+
 /* nested selector */
-.wrapper .rect{
+.wrapper .rect {
     color: blue;
 }
+
 /* *:not(.wrapper .rect,#square){
      color: red !important; for all
     color:blue in !important;
 } */
-.red{
+.red {
     /* color: red; */
     color: #b71d1c;
     /* color:#b71d1c10 */
@@ -59,23 +69,29 @@ fieldset{
     /* color: rgba(red, green, blue, 10); */
     /* color: hsl(0, 100%, 50%); */
 }
-.color-bg{
+
+.color-bg {
     width: 100px;
     height: fit-content;
     color: white;
 }
-.green{
+
+.green {
     background: #008000;
 }
-.blue{
+
+.blue {
     background: #008;
 }
+
 /* Some CSS properties for different */
-.green span,.blue span{
+.green span,
+.blue span {
     font-size: 15px;
     padding: 5px;
 }
-.bg-image{
+
+.bg-image {
     width: 300px;
     height: 300px;
     margin: 10px;
@@ -85,16 +101,19 @@ fieldset{
     background-repeat: no-repeat;
     background-position: 15px -65px;
 }
-.borders-wrapper{
+
+.borders-wrapper {
     display: flex;
     flex-direction: row;
 }
-.borders-wrapper div{
+
+.borders-wrapper div {
     width: 100px;
     height: 100px;
     margin: 5px;
 }
-.solid{
+
+.solid {
     /* Border short-hand property */
     /* this is shorthand method for below three codes */
     border: 1px solid red;
@@ -103,7 +122,8 @@ fieldset{
     border-color: red; */
     border-radius: 3px;
 }
-.dashed{
+
+.dashed {
     /* Border short-hand property */
     /* this is shorthand method for below three codes */
     border: 1px dashed blue;
@@ -113,7 +133,8 @@ fieldset{
 
     border-radius: 3px;
 }
-.dotted{
+
+.dotted {
     /* Border short-hand property */
     /* this is shorthand method for below three codes */
     border: 1px dotted blue;
@@ -121,4 +142,41 @@ fieldset{
     border-style: solid;
     border-color: red; */
     border-radius: 3px;
+}
+
+.pseudo input {
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid black;
+}
+.pseudo input[type="text"] {
+    color: red;
+}
+.pseudo input[type="number"] {
+    color: blue;
+}
+.background-img {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024");
+}
+.day{
+    color: tomato;
+    width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+}
+.day2{
+    text-align: start;
+    text-indent: 10px;
+    letter-spacing: 2px;
+}
+.day:hover{
+    color: green;
+}
+.day2:hover{
+    text-shadow: 5px 5px blue;
+    text-decoration: none;
 }
