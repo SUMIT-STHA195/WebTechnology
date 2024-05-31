@@ -208,5 +208,38 @@ fieldset {
         width: 50px;
         height: 50px;
     }
+    .student-card{
+        border:2px solid black;
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        height: 150px;
+        border-radius: 5px;
+        align-items: center;
+        margin: 5px;
+    }
+    .student-card img{
+        width:140px;
+        height: 140px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .student-card .info-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .student-card-wrapper{
+        display: grid;
+        /* grid-template-columns:25% 25% 25%; */
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    
+    @media screen and (max-width:700px) {
+        .hidden{
+            display: flex;
+        }
+        
+    }
 
   
