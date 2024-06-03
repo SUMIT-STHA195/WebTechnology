@@ -235,6 +235,81 @@ fieldset {
         grid-template-columns: repeat(3,1fr);
         gap: 20px;
     }
+    .css-position-relative{
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid black;
+    }
+    .css-position-absolute{
+        position: absolute;
+        right: 10px;
+        width:40px;
+        height: 40px;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .css-position-absolute img{
+        width:30px;
+        height: 30px;
+    }
+    .css-position-relative-2{
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid black;
+        margin-top:5px;
+    }
+    .css-position-absolute-2{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width:40px;
+        height: 40px;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .css-position-absolute-2 img{
+        width:30px;
+        height: 30px;
+    }
+    .fixed button{
+        position: fixed;
+        bottom: 10px;
+        width: 250px;
+        right:50px;
+        background: green;
+        color: aliceblue;
+        padding: 10px;
+    }
+    .sticky-wrapper{
+        border: 2px solid black;
+        width: 400px;
+        height: auto;
+    }
+    .sticky{
+        position: sticky;
+        top:0;
+        background: #008;
+        color: azure;
+    }
+    .border{
+        width: 80px;
+        height: 80px;
+        margin-top:8px;
+    }
+    .solid{
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+        outline: 1px solid brown;
+    }
     
     @media screen and (max-width:700px) {
         .hidden{
