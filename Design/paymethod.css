@@ -1,0 +1,26 @@
+.payment-card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white ;
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%;
+    display:flex;
+    gap: 15px;
+    flex-direction: column;
+    margin: 50px 0;
+}
+.payment-card h2{
+    padding: 15px;
+    margin-left: 5px;
+}
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.field .payment-img{
+    height: 50px;
+    width: 80px;
+    display: flex;
+}

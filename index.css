@@ -224,6 +224,7 @@ fieldset {
         border-radius: 50%;
         padding: 10px;
     }
+
     .student-card .info-wrapper{
         display: flex;
         flex-direction: column;
