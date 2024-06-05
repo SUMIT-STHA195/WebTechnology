@@ -1,0 +1,61 @@
+.student-card-wrapper{
+    display: grid;
+    /* grid-template-columns:25% 25% 25%; */
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.student-card{
+    border:2px solid black;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 15px;
+    width:  220px;
+    padding: 0 70px 0 0;
+}
+.student-card img{
+    width:140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.student-card .info-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:1200px){
+    .student-card-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .student-card{
+        background: rgb(87, 31, 31);
+    }   
+}
+@media screen and (max-width:700px){
+    .student-card-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .student-card{
+        background: greenyellow;
+    }   
+}
+@media screen and (max-width:400px){
+    .student-card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .student-card{
+        background: gainsboro;
+    }   
+}
+@media screen and (min-width:1200px){
+    .student-card-wrapper{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .student-card{
+        background: rgb(250, 175, 175);
+    }   
+}
+

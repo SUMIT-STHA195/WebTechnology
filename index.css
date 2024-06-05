@@ -310,7 +310,45 @@ fieldset {
         border-style: solid;
         outline: 1px solid brown;
     }
-    
+    .ellipsis{
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid black;
+    }
+    .fruits{
+        display: flex;
+        gap:10px;
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .fruit{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: lightblue;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .fruit:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .fruit:hover{
+        background: rgb(43, 126, 153) ;
+    }
+    .fruit:active{
+        transform: scale(1.01);
+    }
+    .fruit img{
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
     @media screen and (max-width:700px) {
         .hidden{
             display: flex;
