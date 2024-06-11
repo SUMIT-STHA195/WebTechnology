@@ -1,12 +1,14 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Internal JS inside head -->
     <script>
-        document.title="JavaScript"
+        document.title = "JavaScript"
     </script>
 </head>
+
 <body>
     <!-- Inline JS inside body -->
     <button onclick="console.log('hello world')">Click Me</button>
@@ -19,28 +21,93 @@
         <li>Number</li>
         <li>Boolean</li>
     </ol>
-   <script>
-       // variables
-       let name="ram";
-       let roll=25;
-       const Country="ram";
-       var address= "asd";
-       console.log(name);
-       console.log(name+ " 12345")
-    // string
-        let abc="aSLKFH";
-        let cde='iausfh';
-        let asd=`s.djfh ${abc}`;
-        let num1=20
-        console.log(num1+cde);
-        console.log(num1-"20");
+    <script>
+        // variables
+        let name = "ram";
+        let roll = 25;
+        const Country = "ram";
+        var address = "asd";
+        console.log(name);
+        console.log(name + " 12345")
+        // string
+        let abc = "aSLKFH";
+        let cde = 'iausfh';
+        let asd = `s.djfh ${abc}`;
+        let num1 = 20
+        console.log(num1 + cde);
+        console.log(num1 - "20");
+        console.log(asd);
+        // june 11(numbers, function)
+        //number
+        let num2 = 20;
+        let num3 = 20.02;
+        console.log(num2 + num3);
+        // Boolean
+        let isMale = true;
+        let isHoliday = false;
 
-    console.log(asd);
+        //function
+        function getDay() {
+            return "Tuesday";
+        }
+        let today = getDay();
+        console.log(today);
+        //    named function with multiple parameter
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+        let result = sum(30, 20);
+        console.log(result);
+        function multiplication(num1, num2) {
+            return num1 * num2;
+        }
+        let result1 = multiplication(30, 20);
+        console.log(result1);
+        function diff(num1, num2) {
+            return num1 - num2;
+        }
+        let result2 = diff(30, 20);
+        console.log(result2);
+        // anonymous functions
+        // (parameter)=>{}
+        let addition=(num1,num2)=>{
+            return num1+num2;
+        }
+        console.log(addition(num1,num2));
 
-   </script>
+    </script>
+    <script>
+        // scope
+        let phone="984563465566";//global
+        function getSomething(){
+            let val="12354321";//functional scope
+            if(1==1){
+                //val1 & phone can be accessed here
+                let val2="kjsaefhksljc";
+            }
+            //val2 cannot be accessed here
+            // console.log(val2);
+        }
+        getSomething();
+        // operators
+        // arithmetic(+,-,/,%,*)
+        // logical(&&,||,!)
+        // assignment(=)
+        // comparision(<,>,==,===)
+        // increament/decreament(++,--)
+        function checkEvenOdd(number){
+            if(number%2==0){
+                console.log("EVEN");
+            }else{
+                console.log("ODD");
+            }
+        }
+        checkEvenOdd(4);
+    </script>
     <!-- External JS inside body -->
-    <script src="../js/index.js" >
-       
+    <script src="../js/index.js">
+
     </script>
 </body>
+
 </html>
