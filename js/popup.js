@@ -13,5 +13,8 @@ function addTwoNumber(){
     let firstNum=prompt("Enter first number")
     let secondNum=prompt("Enter second number")
     alert(Number(firstNum)+Number(secondNum));
+    alert(Number(firstNum)-Number(secondNum));
+    alert(Number(firstNum)*Number(secondNum));
+    alert(Number(firstNum)/Number(secondNum));
 }
 

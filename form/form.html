@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>16 june</legend>
+        <form style="display: grid; gap: 10px; max-width: 500px; margin: auto;" id="studentForm"  onsubmit="handleFormSubmission()">
+            <label for="">Upload your photo</label>
+            <input  type="file" name="" id="photo">
+            <input  type="text" placeholder="FirstName" id="fName">
+            <input  type="text" placeholder="LastName"
+            id="lName">
+            <input type="number" placeholder="Age" id="age">
+            <input  type="date" placeholder="DOB" id="DOB">
+            <input type="color" placeholder="color" id="color">
+            <input  type="text" placeholder="Phone Number" id="phone">
+            <select id="gender">
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option>
+                <option value="OTHERS">OTHERS</option>
+            </select>
+            <h3>Receive alerts in emails and Phone</h3>
+            <div>
+                <label for="">Email</label>
+                <input id="email-opt" type="checkbox" placeholder="Email">
+            </div>
+            <div>
+                <label for="">Phone</label>
+                <input id="phone-opt" type="checkbox" placeholder="Phone">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="../form/object.js">
+
+        </script>
+    </fieldset>
+</body>
+</html>
