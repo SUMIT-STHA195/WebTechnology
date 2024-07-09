@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn">Click Me</button>
+    <button id="add-user">Add user</button>
+    <button id="button"></button>
+</body>
+<script>
+    let btnElem1=document.getElementById('myBtn');
+    let btnElem2=document.getElementById('add-user');
+    let btns=document.getElementsByTagName('button');
+    let btnsArray=[...btns];//spread
+    btnElem1.classList.add('button');
+    btnElem1.classList.add('button1');
+    btnElem1.classList.remove('button2');
+    btnElem1.innerText="Hari";
+    btnElem1.style.background="red";
+    btnElem1.style.color="White";
+    btnElem1.style.padding="10px";
+    btnElem1.style.width="100px";
+    btnElem1.style.border="none";
+    btnElem2.innerText="Syam";
+</script>
+</html>

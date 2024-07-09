@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ol li{
+            display: inline;
+        } */
+         table{
+            border-collapse: collapse;
+            text-align: center;
+         }
+         table, th,tr,td{
+            border: 2px solid black;
+            
+         }
+    </style>
+</head>
+<body>
+    <!-- <ol type="1">
+        <li>Coffee:<ol type="I" >
+                <li>milk</li>
+                <li>black</li>
+            </ol>
+        </li>
+        <li>Tea:</li>
+    </ol> -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>sn</th>
+                <th>subject</th>
+                <th>credit hour</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>WT</td>
+                <td rowspan="3">3hr</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WT</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <div>
+        <img src="" alt="this is image">
+        <p onmouseover="change()" onmouseout="change2()" id="paragraph">this is paragraph.</p>
+    </div>
+    <script>
+        function change(){
+            document.getElementById("paragraph").textContent="Paragraph2"
+        } 
+        function change2(){
+            document.getElementById("paragraph").textContent="Paragraph1"
+        } 
+    </script>
+</body>
+</html>
