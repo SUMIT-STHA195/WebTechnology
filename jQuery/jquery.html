@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #img {
+            width: 800px;
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="click-me-btn-1">Click Me</button>
+    <button id="click-me-btn-2">Click Me</button>
+    <img id="img" src="" alt="">
+    <script>
+        // old method
+        document.getElementById('click-me-btn-1').addEventListener('click', () => {
+            console.log('btn clicked');
+        });
+        // syntax: $(selector).(()=>action)
+        $(document).ready(() => {
+            $('#click-me-btn-2').click(() => {
+                $('#img')
+                    .attr('src', "../image/IMG_2773.jpg")
+                    .attr('alt', 'some img')
+                    .slideUp(2000)
+                    .slideDown(2000);//chaining
+                $('#click-me-btn-2').text('Hello world').css('color', 'red').css('position','absolute').animate({right:"10px"},3000);
+                $('#click-me-btn-1').hide();
+                setTimeout(() => {
+                    $('#click-me-btn-1').show();
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+
+</html>
