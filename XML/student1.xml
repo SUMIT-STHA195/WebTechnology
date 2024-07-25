@@ -1,0 +1,26 @@
+<college>
+    <student>    
+        <firstName>sumit</firstName>
+        <lastName>shrestha</lastName>
+        <contact>9842524266</contact>
+        <email>sumitshrestha2313@gmail.com</email>
+        <address>
+            <city>kathmandu</city>
+            <state>1</state>
+            <pin>0000</pin>
+        </address>
+        <age>21</age>
+    </student>
+    <student>    
+        <firstName>monu</firstName>
+        <lastName>siddiki</lastName>
+        <contact>98001111</contact>
+        <email>monuchor@gmail.com</email>
+        <address>
+            <city>kathmandu</city>
+            <state>1</state>
+            <pin>0000</pin>
+        </address>
+        <age>22</age>
+    </student>
+</college>

@@ -1,0 +1,11 @@
+<!DOCTYPE csit[
+    <!ELEMENT csit(student+)>
+    <!ELEMENT student(name+,age,roll,imageUrl)>
+    <!ELEMENT name(fName,lName)>
+    <!ELEMENT fName(#PCDATA)>
+    <!ELEMENT lName(#PCDATA)>
+    <!ELEMENT age(#PCDATA)>
+    <!ELEMENT roll(#PCDATA)>
+    <!ELEMENT imageUrl(#PCDATA)>
+    <!ATTLIST student gender>
+ ]>

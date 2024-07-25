@@ -1,5 +1,5 @@
 <csit>
-<student>
+<student gender="M">
     <name>
         <fname>SUMIT</fname>
         <lname>SHRESTHA</lname>
@@ -8,7 +8,7 @@
     <rollNo>23</age>
     <imageURL>https://example.com/1.jpg</imageURL>
 </student>
-<student>
+<student gender="M">
     <name>
         <fname>SUMIT</fname>
         <lname>SHRESTHA</lname>
