@@ -76,6 +76,7 @@
         $parsed_result=$result->fetch_assoc();
         // echo $sql;
         print_r($parsed_result);
+        // print_r($result);
     }  
     
   }

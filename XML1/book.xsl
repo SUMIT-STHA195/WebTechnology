@@ -65,7 +65,7 @@
 </style>
 </head>
 <body>
-  <xsl:variable name="externalData" select="document('book.xml')"/>
+  <xsl:variable name="externalData" select="document('bookstore.xml')"/>
     <div class="books">
       <xsl:for-each select="$externalData/bookstore/book">
         <div class="book">

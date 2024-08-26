@@ -1,4 +1,4 @@
-<?xml-stylesheet type="text/xsl" href="./book.xsl"?>
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
 <bookstore location="nepal">
     <book category="fiction">
         <author gender="M">Ram</author>
